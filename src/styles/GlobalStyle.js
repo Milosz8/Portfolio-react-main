@@ -7,12 +7,12 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
   :root{
-    --dark-bg: #262626;
-    --gray-1: #BCB4B4;
-    --deep-dark: #1E1E1E;
-    --gray-2: #363636;
-    --white : white;
-    --black: black;
+    --dark-bg: #0D0D0D;
+    --gray-1: #D9D9D9;
+    --deep-dark: #262626;
+    --gray-2: #404040;
+    --white : red;
+    --black: #0D0D0D;
   }
   html{
     font-size: 10px;
@@ -51,7 +51,7 @@ const GlobalStyles = createGlobalStyle`
       z-index: 101;
       background: var(--deep-dark);
       .scrollbar-thumb-y {
-        background: var(--gray-1);
+        background: red;
       }
     }
   }

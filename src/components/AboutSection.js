@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Button from './Button';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
-import AboutImg from '../assets/images/about-sec-img.png';
+import AboutImg from '../assets/images/about-sec-img.jpg';
 
 const AboutSectionStyle = styled.div`
   padding: 10rem 0;
@@ -80,8 +80,8 @@ export default function AboutSection() {
             heading="About me"
           />
           <PText>
-            Poszukuję ambitnej pracy jako programista front-end, która umożliwi
-            mi dalsze podnoszenie kwalifikacji i umiejętności
+            I'm looking for ambitious work as a front-end proggramer, which
+            allow me to improve my quallifications and skill.
           </PText>
           <div className="aboutSection__buttons">
             <Button btnLink="/projects" btnText="Works" />

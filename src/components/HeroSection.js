@@ -28,7 +28,7 @@ const HeroStyles = styled.div`
     .hero__name {
       font-size: 7rem;
       font-family: 'Montserrat SemiBold';
-      color: var(--white);
+      color: white;
     }
   }
   .hero__img {
@@ -64,6 +64,7 @@ const HeroStyles = styled.div`
       transform: translateY(-70px) rotate(90deg);
       letter-spacing: 0.7rem;
       text-transform: uppercase;
+      color: red;
     }
     img {
       max-height: 45px;
@@ -84,13 +85,14 @@ const HeroStyles = styled.div`
       }
       a {
         display: inline-block;
-        font-size: 1.6rem;
+        font-size: 2.6rem;
         transform: rotate(-90deg);
         letter-spacing: 5px;
         margin-bottom: 2rem;
       }
     }
   }
+
   @media only screen and (max-width: 768px) {
     .hero {
       min-height: 750px;
@@ -149,20 +151,17 @@ export default function HeroSection() {
       <div className="hero">
         <div className="container">
           <h1 className="hero__heading">
-            <span>Hello, This is</span>
+            <span>Hi! My name is</span>
             <span className="hero__name">Miłosz Siemek</span>
           </h1>
           <div className="hero__img">
             <img src={HeroImg} alt="heroimage" />
           </div>
           <div className="hero__info">
-            <PText>
-              Poszukuję ambitnej pracy jako programista front-end, która
-              umożliwi mi dalsze podnoszenie kwalifikacji i umiejętności
-            </PText>
+            <PText>Front-end developer in XYZ</PText>
             <Button
               btnLink="/projects"
-              btnText="Zobacz moje projekty"
+              btnText="See my projects"
               outline={false}
             />
           </div>
@@ -173,7 +172,7 @@ export default function HeroSection() {
             </div>
             <div className="hero__social__text">
               <ul>
-                <li>
+                <li className="fb">
                   <a
                     href="https://www.facebook.com/profile.php?id=100001479238107"
                     target="_blank"
@@ -182,7 +181,7 @@ export default function HeroSection() {
                     FB
                   </a>
                 </li>
-                <li>
+                <li className="ig">
                   <a
                     href="https://www.facebook.com/profile.php?id=100001479238107"
                     target="_blank"
@@ -191,7 +190,7 @@ export default function HeroSection() {
                     IG
                   </a>
                 </li>
-                <li>
+                <li className="li">
                   <a
                     href="https://www.facebook.com/profile.php?id=100001479238107"
                     target="_blank"
